@@ -2,10 +2,12 @@ from colorama import Fore, Style
 from datetime import datetime
 import time
 import re
+import sys
 
 currentdate = datetime.today().strftime('%Y%m%d')
 
-logFilePath = "example_log.adi"
+logFilePath = sys.argv[1]
+print(logFilePath)
 
 
 
